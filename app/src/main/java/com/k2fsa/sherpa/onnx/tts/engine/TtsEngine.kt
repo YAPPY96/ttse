@@ -81,7 +81,7 @@ object TtsEngine {
             voices = voices ?: "",
             lexicon = lexicon ?: "",
             tokens = tokens ?: "",
-            dataDir = "", // Leave empty to avoid phontab check
+            dataDir = dataDir ?: "",
             dictDir = "",
             ruleFsts = ruleFsts ?: "",
             ruleFars = ruleFars ?: "",

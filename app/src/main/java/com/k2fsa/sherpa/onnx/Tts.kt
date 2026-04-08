@@ -267,7 +267,7 @@ fun getOfflineTtsConfig(
                 tokens != "" -> if (tokens.contains("/")) tokens else "$modelDir/$tokens"
                 else -> "$modelDir/tokens.txt"
             },
-            dataDir = "",
+            dataDir = dataDir,
         )
     } else {
         OfflineTtsVitsModelConfig()
