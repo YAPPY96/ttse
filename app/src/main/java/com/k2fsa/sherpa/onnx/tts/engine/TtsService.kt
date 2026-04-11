@@ -171,7 +171,7 @@ class TtsService : TextToSpeechService() {
             }
 
             Log.i(TAG, "Generating audio for: $text")
-            val regex = Regex("(?<=[\\u4e00-\\u9fa5\\u3040-\\u309f\\u30a0-\\u30ff])|(?=[\\u4e00-\\u9fa5\\u3040-\\u309f\\u30a0-\\u30ff])")
+            val regex = Regex("(?<=[\\u4e00-\\u9fa5\\u3000-\\u30ff\\uff00-\\uffef])|(?=[\\u4e00-\\u9fa5\\u3000-\\u30ff\\uff00-\\uffef])")
             val processedText = text.replace(regex, " ").replace(Regex("\\s+"), " ").trim()
             ttsInstance.generateWithConfigAndCallback(
                 text = processedText,
