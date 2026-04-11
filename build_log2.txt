@@ -1,0 +1,22 @@
+﻿Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+.\gradlew.bat : 
+At line:1 char:65
++ ... droid\Android Studio\jbr"; .\gradlew.bat assembleRelease 2>&1 | Out-F ...
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':app:lintVitalReportRelease'.
+> SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.d
+ir path in your project's local properties file at 'C:\Users\yasuf\Downloads\ttse-main\ttse-main\local.properties'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 42s

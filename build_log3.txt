@@ -1,0 +1,69 @@
+﻿> Task :app:buildKotlinToolingMetadata
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+
+> Task :app:processReleaseMainManifest
+package="com.k2fsa.sherpa.onnx.tts.engine" found in source AndroidManifest.xml: C:\Users\yasuf\Downloads\ttse-main\ttse-main\app\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.k2fsa.sherpa.onnx.tts.engine" from the source AndroidManifest.xml: C:\Users\yasuf\Downloads\ttse-main\ttse-main\app\src\main\AndroidManifest.xml.
+
+> Task :app:processReleaseManifest
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:mergeReleaseNativeLibs
+> Task :app:desugarReleaseFileDependencies
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libonnxruntime.so, libsherpa-onnx-c-api.so, libsherpa-onnx-cxx-api.so, libsherpa-onnx-jni.so.
+
+> Task :app:processReleaseManifestForPackage
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeExtDexRelease
+> Task :app:processReleaseResources
+> Task :app:mergeReleaseAssets
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:optimizeReleaseResources
+> Task :app:compressReleaseAssets
+
+> Task :app:compileReleaseKotlin
+w: file:///C:/Users/yasuf/Downloads/ttse-main/ttse-main/app/src/main/java/com/k2fsa/sherpa/onnx/Tts.kt:245:5 Parameter 'dictDir' is never used
+w: file:///C:/Users/yasuf/Downloads/ttse-main/ttse-main/app/src/main/java/com/k2fsa/sherpa/onnx/Tts.kt:250:5 Parameter 'isStyleBertVits2' is never used
+w: file:///C:/Users/yasuf/Downloads/ttse-main/ttse-main/app/src/main/java/com/k2fsa/sherpa/onnx/tts/engine/MainActivity.kt:206:76 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :app:compileReleaseJavaWithJavac NO-SOURCE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:dexBuilderRelease
+> Task :app:mergeReleaseGlobalSynthetics
+> Task :app:processReleaseJavaRes
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeDexRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:assembleRelease
+
+BUILD SUCCESSFUL in 1m 22s
+45 actionable tasks: 45 executed
