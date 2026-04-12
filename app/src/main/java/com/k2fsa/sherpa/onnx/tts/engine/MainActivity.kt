@@ -328,7 +328,8 @@ class MainActivity : ComponentActivity() {
 
                                             // Workaround: Sherpa-ONNX expects space-separated words for non-Chinese models.
                                             // Since we use a character-level lexicon.txt, we must space out the text.
-                                            val processedText = testText.toCharArray().joinToString(" ")
+                                            val regex = Regex("(?<=[\\u4e00-\\u9fa5\\u3000-\\u30ff\\uff00-\\uffef])|(?=[\\u4e00-\\u9fa5\\u3000-\\u30ff\\uff00-\\uffef])")
+                                            val processedText = testText.replace(regex, " ").replace(Regex("\\s+"), " ").trim()
                                             Log.i(TAG, "Processed text for Sherpa-onnx generation: $processedText")
 
                                             val audio =
